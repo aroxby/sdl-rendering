@@ -9,7 +9,7 @@ include_directories(${SDL2_INCLUDE_DIR})
 link_directories(${SDL2_LIBRARY})
 add_definitions(-DSDL_MAIN_HANDLED)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake)
 find_package(SDL2 REQUIRED)
 
 file(GLOB SRCS *.cpp)
