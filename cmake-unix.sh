@@ -1,2 +1,2 @@
 #!/bin/sh
-cmake -G "Unix Makefiles" "$1"
+cmake -G "Unix Makefiles" "$@"
