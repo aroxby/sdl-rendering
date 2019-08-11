@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(sdl-rendering)
 
-set(SDL2_DIR C:/mingw-addons/SDL2-2.0.9/i686-w64-mingw32)
+set(SDL2_DIR $ENV{SDL2_DIR})
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake)
 
 find_package(SDL2 REQUIRED)
